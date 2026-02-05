@@ -1,31 +1,41 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Education from "./Education";
-import Skills from "./Skills"; // <--- IMPORT THIS
+import Skills from "./Skills";
 import Certificates from "./Certificates";
-import "./App.css";
 import Projects from "./Projects";
+import Footer from "./Footer";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/education" element={<Education />} />
-        
-        {/* ADD THIS ROUTE */}
-        <Route path="/skills" element={<Skills />} />
-    
 
-        <Route path="/certificates" element={<Certificates />} />
-        <Route path="/projects" element={<Projects />} />
+      <section id="home" className="section dark">
+        <Home />
+      </section>
 
-        
-      </Routes>
-    </Router>
+      <section id="education" className="section blue">
+        <Education />
+      </section>
+
+      <section id="skills" className="section light-blue">
+        <Skills />
+      </section>
+
+      <section id="certificates" className="section white">
+        <Certificates />
+      </section>
+
+      <section id="projects" className="section white">
+        <Projects />
+      </section>
+      
+
+      <Footer />
+    </>
   );
 }
 

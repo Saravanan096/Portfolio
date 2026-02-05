@@ -1,20 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./App.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        {/* Use Link instead of a tag to prevent page reload */}
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/education" className="nav-link">Education</Link>
-        <Link to="/skills" className="nav-link">Skills</Link>
-        <Link to="/certificates" className="nav-link">Certificates</Link>
-        <Link to="/projects" className="nav-link">Projects</Link>
+        <a href="#home" className="nav-link">Home</a>
+        <a href="#education" className="nav-link">Education</a>
+        <a href="#skills" className="nav-link">Skills</a>
+        <a href="#certificates" className="nav-link">Certificates</a>
+        <a href="#projects" className="nav-link">Projects</a>
       </div>
+
       <div className="nav-right">
-        <span className="welcome-text">Hi ! Saravanan G</span>
+        <span className="welcome-text">Saravanan G</span>
       </div>
     </nav>
   );
