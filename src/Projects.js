@@ -5,6 +5,25 @@ function Projects() {
   const [activeProject, setActiveProject] = useState(null);
 
   const projects = [
+      {
+      title: "File Uploading System",
+      year: "2026",
+      shortDesc: "React-based platform for secure file uploads and user-based search and retrieval.",
+      tech: "React, Node.js, MongoDB",
+      img: "/images/fus.webp",
+      features: [
+        "Secure user-specific file uploading",
+        "Advanced search by username for file retrieval",
+        "Instant file download functionality",
+        "Personalized user upload dashboard",
+        "Scalable storage using MongoDB GridFS",
+      ],
+      longDesc: `Developed a full-stack file management application where users can securely upload and store their documents. 
+Integrated MongoDB to link files with specific user profiles, ensuring organized data retrieval.
+
+Designed a robust search feature allowing users to locate and download files uploaded by others by searching their usernames. 
+Implemented a responsive React frontend to manage file states and provide real-time feedback during the upload and download process.`,
+},
     {
       title: "Automobile Rental Web Application",
       year: "2025",
