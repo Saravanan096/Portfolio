@@ -23,7 +23,7 @@ Gained strong understanding of:
       mastering the fundamentals of front-end development. I applied these skills to build a responsive 
       web interface using semantic HTML5 and advanced CSS3 layouts for a seamless user experience.
       `,
-      img: "/images/",
+      img: "/images/guvi-hcl.png",
     },
 
     {
